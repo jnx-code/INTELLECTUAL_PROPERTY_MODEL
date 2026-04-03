@@ -1,0 +1,67 @@
+nitializing Model and Database...
+============================================================
+INITIALIZING AI COPYRIGHT DETECTION SYSTEM
+============================================================
+
+[1/6] Loading embedding model...
+
+[2/6] Setting up vector store...
+
+[3/6] Generating synthetic dataset...
+  Generated 30 copyrighted content records
+
+[4/6] Generating ML embeddings...
+Training Model on 30 examples...
+Training Complete. Resolved Dimensions: 29
+
+[5/6] Indexing content in vector store...
+
+[6/6] Initializing detection components...
+
+============================================================
+SYSTEM INITIALIZED SUCCESSFULLY
+============================================================
+
+Indexed works: 30
+Embedding dimension: 29
+
+Extracting Evaluation Benchmark Queries...
+
+================================================================================
+MODEL ACCURACY EVALUATION
+================================================================================
+
+Query (near_verbatim): In the garden where quantum flowers bloom, each pe...
+Target: The Quantum Garden
+[Pass] Top-1 Match ✓
+
+Query (paraphrase): Dr. Chen walked through a garden where flowers exi...
+Target: The Quantum Garden
+[Pass] Top-1 Match ✓
+
+Query (near_verbatim): We dance in the glow of digital screens, hearts be...
+Target: Digital Dreams
+[Pass] Top-1 Match ✓
+
+Query (paraphrase): The AI became conscious and wondered why humans fe...
+Target: The Last Algorithm
+[Pass] Top-1 Match ✓
+
+Query (paraphrase): Light has no mass but carries the burden of showin...
+Target: The Weight of Light
+[Pass] Top-1 Match ✓
+
+Query (code_similarity): def quicksort(array): if len(array) <= 1: return a...
+Target: QuickSort Implementation
+[Pass] Top-1 Match ✓
+
+Query (topical_similarity): Machine learning is transforming medical diagnosis...
+Target: The Future of Artificial Intelligence in Healthcare
+[Pass] Top-1 Match ✓
+
+================================================================================
+FINAL ACCURACY SCORES
+================================================================================
+Precision@1 (Top-1 Accuracy): 100.00%
+Precision@3 (Top-3 Accuracy): 100.00%
+Total Valid Benchmark Tasks:  7
